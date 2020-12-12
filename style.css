@@ -1,0 +1,42 @@
+/* Plate */
+
+.plate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  background-color: #e4e4e4;
+  border-radius: 50%;
+  justify-content: center;
+  font-size: 15px;
+  box-shadow: 2px 2px 8px 2px #000;
+}
+
+.inner_plate {
+  align-self: center;
+  border-radius: 50%;
+  height: 70%;
+  width: 70%;
+  border: #eeeeee solid 2px;
+  background-color: #dadada;
+  font-size: 1rem;
+  box-shadow: 0 0 10px 10px #dadada;
+}
+
+.inner_plate::after {
+  content: "";
+  position: absolute;
+  background-color: #e3e3e3;
+  height: 40%;
+  width: 20%;
+  display: block;
+  border-radius: 50%;
+  transform: rotate(34deg);
+  right: 21%;
+  top: 42%;
+  font-size: inherit;
+  box-shadow: -.6em .2em 1em 1em #e3e3e3;
+}
+
+/* End Plate */
